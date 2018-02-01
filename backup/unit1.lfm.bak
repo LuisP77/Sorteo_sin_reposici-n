@@ -1,0 +1,78 @@
+object Form1: TForm1
+  Left = 256
+  Height = 305
+  Top = 128
+  Width = 411
+  Caption = 'Sorteig sense reposició'
+  ClientHeight = 305
+  ClientWidth = 411
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object StringGrid1: TStringGrid
+    Left = 16
+    Height = 250
+    Top = 24
+    Width = 136
+    ColCount = 2
+    DefaultColWidth = 65
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    RowCount = 3
+    TabOrder = 0
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Height = -16
+    TitleFont.Name = 'Arial Rounded MT Bold'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+  end
+  object TrackBar1: TTrackBar
+    Left = 184
+    Height = 25
+    Top = 74
+    Width = 189
+    Min = 2
+    OnChange = TrackBar1Change
+    Position = 2
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 264
+    Height = 22
+    Top = 56
+    Width = 11
+    Caption = '2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 194
+    Height = 62
+    Top = 116
+    Width = 174
+    Caption = 'SORTEJAR'
+    Default = True
+    Kind = bkOK
+    Layout = blGlyphBottom
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 196
+    Height = 26
+    Top = 184
+    Width = 167
+    Caption = 'Esborrar'
+    OnClick = BitBtn2Click
+    TabOrder = 3
+  end
+end
